@@ -23,7 +23,7 @@
                 success:function(res){
                         console.log(res);
                 },error:function(err){
-                    console.log(err);
+                    //console.log(err);
                   let error=err.responseJSON;  
                   $.each(error.erros,function(index,value){
                     $('.errorMsgContainer').append('<span class="text-danger">'+value+'</span>'+'<br>');
